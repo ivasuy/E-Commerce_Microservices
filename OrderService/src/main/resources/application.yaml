@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/myorderdb
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  application:
+    name: ORDER-SERVICE
+  config:
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:9296}
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  okta:
+    oauth2:
+      grantType: client_credentials
+      issuer: https://dev-36320159.okta.com/oauth2/default
+      clientId: 0oabchyrsuH5b6Smq5d7
+      clientSecret: SbG9azWQjaN6rry5edv51ThLkhF3fJ4ObmpJfoC8WZ26XuooBsd4UgoU8C7TxUzS
+      rolesClaim: groups
+      scope: openid
+
