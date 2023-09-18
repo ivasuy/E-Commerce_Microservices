@@ -305,7 +305,7 @@ Swagger Link For Testing API : [http://localhost:8082/swagger-ui/#/](http://loca
 
 ## **Tech Stack :**
 
-Java, Spring / Spring Boot, JPA, Hibernate, MySQL, Spring Security, Okta Security, JWT, Maven, JUnit, Spring Cloud, Eureka, Spring Cloud Config Server, ****Spring Web.
+Java, Spring / Spring Boot, JPA, Hibernate, MySQL, Spring Security, Okta Security, JWT, Maven, JUnit, Spring Cloud, Eureka, Spring Cloud Config Server, Spring Web.
 
 ---
 
